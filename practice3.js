@@ -5,4 +5,4 @@ console.log(typeof (arr))
 
 // 원시 타입 : number, string, boolean, undefined, null
 
-// 참조 타입 : obejct 
+// 참조 타입 : obejct  
