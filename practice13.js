@@ -10,6 +10,6 @@ const planets = [
 ]
 
 
-const n = prompt("몇번째 행성을 원하나요?");
+const n = prompt("몇번째 행성으로 가고 싶나요?")
 
 console.log(planets[n - 1])
