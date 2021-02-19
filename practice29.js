@@ -1,7 +1,7 @@
-const word = prompt();
+const word = prompt()
 
 if (word === word.toUpperCase()) {
-    console.log("Yes")
+    console.log('yes')
 } else {
-    console.log("No")
+    console.log('no')
 }
