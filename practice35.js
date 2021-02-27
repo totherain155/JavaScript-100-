@@ -1,6 +1,6 @@
 function one(n) {
     function two(x) {
-        return Math.pow(x, n)
+        return Math.pow(n, x)
     }
     return two;
 }
