@@ -1,10 +1,9 @@
 function one(n) {
     function two(x) {
-        return Math.pow(n, x)
+        return Math.pow(x, n)
     }
     return two;
 }
-
 const a = one(2);
 const b = one(3);
 const c = one(4);
