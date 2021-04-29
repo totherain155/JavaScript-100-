@@ -1,8 +1,8 @@
-const num = 2;
-let sum = "";
+const num = prompt();
+let result = "";
 
 for (let i = 1; i <= 9; i++) {
-    sum = sum + (i * num) + " "
+  result = result + num * i + " ";
 }
 
-console.log(sum)
+console.log(result);
