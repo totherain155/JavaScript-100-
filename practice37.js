@@ -6,3 +6,9 @@ for (let index in array) {
   let val = array[index];
   result[val] = result[val] === undefined ? 1 : (result[val] = result[val] + 1);
 }
+
+// {원범 : 2, 혜원 : 1}
+
+//console.log(result)
+
+Object.keys(result).reduce(function (a, b) {});
