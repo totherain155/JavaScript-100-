@@ -11,4 +11,9 @@ for (let index in array) {
 
 //console.log(result)
 
-Object.keys(result).reduce(function (a, b) {});
+winner = Object.keys(result).reduce(function (a, b) {
+  console.log(a, b);
+  return result[a] > result[b] ? a : b;
+});
+
+console.log(`승자는 ${winner}`);
