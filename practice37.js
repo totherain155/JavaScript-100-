@@ -2,5 +2,7 @@ const array = ["원범", "원범", "혜원", "혜원", "혜원", "혜원", "유�
 let result = {};
 let winner = "";
 
-for (lwt index in array) {
+for (let index in array) {
+  let val = array[index];
+  result[val] = result[val] === undefined ? 1 : (result[val] = result[val] + 1);
 }
