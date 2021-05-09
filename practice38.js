@@ -18,5 +18,3 @@ while (arr.length < 3) {
   }
   count += 1;
 }
-
-console.log(count);
