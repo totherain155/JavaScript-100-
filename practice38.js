@@ -1,8 +1,13 @@
 const scores = ["97", "86", "75", "66", "55", "97", "85", "97", "97", "95"];
 
 scores.sort((a, b) => {
-  return a - b;
+  return a - b; // 오름차순
 });
 
+let top3 = [];
 let count = 0;
-let arr = [];
+
+while (top3.length < 3) {
+  let value = scores.pop();
+  top3.push(value);
+}
