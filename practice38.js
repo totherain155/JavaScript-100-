@@ -1,8 +1,4 @@
-const scores = prompt("점수입력")
-  .split(" ")
-  .map(function (n) {
-    return parseInt(n, 10);
-  });
+const scores = ["97", "86", "75", "66", "55", "97", "85", "97", "97", "95"];
 
 scores.sort((a, b) => {
   return a - b;
