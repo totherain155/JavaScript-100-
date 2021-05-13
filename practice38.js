@@ -20,7 +20,7 @@ scores.sort((a, b) => {
 let top3 = [];
 let count = 0;
 
-while (top3.length < 3) {
+while (top3.length < 4) {
   let value = scores.pop();
   if (!top3.includes(value)) {
     top3.push(value);
@@ -28,4 +28,4 @@ while (top3.length < 3) {
   count++;
 }
 console.log(top3);
-console.log(count);
+console.log(count - 1);
