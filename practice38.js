@@ -9,5 +9,10 @@ let count = 0;
 
 while (top3.length < 3) {
   let value = scores.pop();
-  top3.push(value);
+  if (!top3.includes(value)) {
+    top3.push(value);
+  }
+  count++;
 }
+console.log(top3);
+console.log(count);
