@@ -9,4 +9,3 @@ for (let i = 0; i < memberCount; i++) {
     count++;
   }
 }
-console.log(totalWeight);
