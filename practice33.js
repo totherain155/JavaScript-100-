@@ -7,12 +7,14 @@ const nums = "1 2 3 4 5";
 //const arr = nums.split(" ").reverse();
 
 // 다시 문자열로 반환한다.
-const arr = nums.split(" ").reverse().join(" ");
+const arr = nums.split(" ").reverse();
 
-console.log(arr);
+//console.log(arr);
 
 let reverseNum = "";
 
 for (let i = 0; i < arr.length; i++) {
-  reverseNum = reverseNum + arr[i];
+  reverseNum = reverseNum + arr[i] + " ";
 }
+
+console.log(reverseNum);
