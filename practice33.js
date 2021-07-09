@@ -11,12 +11,8 @@ const arr = nums.split(" ").reverse().join(" ");
 
 console.log(arr);
 
-//let reverseNum = "";
+let reverseNum = "";
 
-/*
 for (let i = 0; i < arr.length; i++) {
-    reverseNum = reverseNum + (arr[i] + " ");
+  reverseNum = reverseNum + arr[i];
 }
-
-console.log(reverseNum)
-*/
