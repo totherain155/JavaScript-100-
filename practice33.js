@@ -8,13 +8,13 @@ const nums = "1 2 3 4 5";
 
 // 다시 문자열로 반환한다.
 const arr = nums.split(" ").reverse();
+const toNumbers = arr.map((num) => Number(num));
+console.log(toNumbers);
 
-//console.log(arr);
+let sum = 0;
 
-let reverseNum = "";
-
-for (let i = 0; i < arr.length; i++) {
-  reverseNum = reverseNum + arr[i] + " ";
+for (let i = 0; i < toNumbers.length; i++) {
+  sum = sum + toNumbers[i];
 }
 
-console.log(reverseNum);
+console.log(sum);
