@@ -1,12 +1,11 @@
-const unsorted = prompt(" ");
-let sorted = unsorted
+const unSorted = prompt();
+
+let sorted = unSorted
   .split(" ")
-  .sort(function (a, b) {
-    return a - b;
-  })
+  .sort((a, b) => a - b)
   .join(" ");
 
-if (unsorted === sorted) {
+if (sorted === unSorted) {
   console.log("Yes");
 } else {
   console.log("No");
