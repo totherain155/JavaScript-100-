@@ -15,17 +15,20 @@ const array = [
 let result = {};
 let winner = "";
 
-for (index in array) {
+// for(index in array )
+// obj에 이름과 득표수를 담아준다.
+for (let index in array) {
   let val = array[index];
   result[val] = result[val] === undefined ? 1 : (result[val] = result[val] + 1);
 }
 
 console.log(result);
 
-winner = Object.keys(result).reduce((a, b) => {
-  return result[a] > result[b] ? a : b;
-});
+//Object.keys(), reduce
+winner = Object.keys(result).reduce((a, b) => (result[a] > result[b] ? a : b));
 
 console.log(winner);
 
-console.log(`${winner}는(은) ${result[winner]}표를 획득하였습니다. `);
+// 혜원(이)가 총 4표로 반장이 되었습니다. (이런식으로)
+
+console.log(`${winner}(이)가 총 ${result[winner]}표로 반장이 되었습니다.`);
