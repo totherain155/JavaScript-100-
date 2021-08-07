@@ -1,10 +1,17 @@
-const prime = 11;
+const prime = 1;
 
-function primeFunc(n) {
+const primeFunc = (n) => {
   for (let i = 2; i < n; i++) {
     if (n % i === 0) {
-      console.log("no");
+      console.log("No");
       return false;
     }
   }
-}
+  if (n === 1) {
+    console.log("No");
+    return false;
+  }
+  console.log("Yes");
+};
+
+primeFunc(prime);
