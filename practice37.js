@@ -26,6 +26,7 @@ console.log(result);
 
 //Object.keys(), reduce
 winner = Object.keys(result).reduce((a, b) => (result[a] > result[b] ? a : b));
+// Object.keys()는 object의 key들을 배열로 반환한다.
 
 console.log(winner);
 
