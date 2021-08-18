@@ -20,6 +20,6 @@ for (let i of user_s) {
     count = 1;
   }
 }
-//
+
 result_s += store_s + String(count);
 console.log(result_s);
