@@ -1,4 +1,25 @@
-const 참가자 = ["a", "b", "c", "d"];
+const solution = (n) => {
+  let 사람 = 0;
+  let 총악수 = 0;
+  let temp = 0;
+  while (true) {
+    총악수 = parseInt((사람 * (사람 - 1)) / 2, 10);
+
+    if (n < 총악수) {
+      break;
+    }
+    //break 되어서 빠져나오기 전 총악수의 갯수를 갖고 있어야 한다.
+    temp = 총악수;
+    //break 되기전 사람 숫자의 연산이 되어야 한다.
+    사람 += 1;
+  }
+  return [Number(n - temp), 사람];
+};
+
+const 악수의수 = 59;
+console.log(solution(악수의수)); //  [4, 12]
+
+//const 참가자 = ["a", "b", "c", "d"];
 
 // 입력 : 59
 // (n-1)(n)/2
